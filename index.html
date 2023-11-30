@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NexGenTest</title>
+</head>
+<body>
+    <header >
+      
+            <a href="#" class="logo">Get<span class="bluecolor">Products</span></a>
+        
+    </header>
+    <main>
+        <div class="filterbutton containers">
+            <label for="filter">Filtrer par:</label>
+            <select id="filter" onchange="filterProducts()">
+                <option value="all">Tous les produits</option>
+                <option value="perprice">Prix inférieur à 100€</option>
+                <option value="perstock">Stock inférieur à 20 unités</option>
+            </select>
+        </div>
+
+        <div id="productlist" class="containers productlist"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
